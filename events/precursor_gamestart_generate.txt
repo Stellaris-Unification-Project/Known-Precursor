@@ -286,8 +286,10 @@ country_event = {
                         any_system_planet = {
                             has_anomaly = no
                             is_star = no
-                            NOT = { exists = archaeological_site }
-                            NOT = { has_planet_flag = suppress_archaeological_sites }
+                            NOR = {
+	exists = archaeological_site
+	has_planet_flag = suppress_archaeological_sites
+}
                             NOR = {
                                 is_planet_class = pc_gas_giant
                                 is_planet_class = pc_molten
@@ -302,8 +304,10 @@ country_event = {
                         limit = {
                             has_anomaly = no
                             is_star = no
-                            NOT = { exists = archaeological_site }
-                            NOT = { has_planet_flag = suppress_archaeological_sites }
+                            NOR = {
+	exists = archaeological_site
+	has_planet_flag = suppress_archaeological_sites
+}
                             NOR = {
                                 is_planet_class = pc_gas_giant
                                 is_planet_class = pc_molten
@@ -380,8 +384,10 @@ country_event = {
                     limit = {
                         any_system_planet = {
                             has_anomaly = no 
-                            NOT = { exists = archaeological_site }
-                            NOT = { has_planet_flag = suppress_archaeological_sites }
+                            NOR = {
+	exists = archaeological_site
+	has_planet_flag = suppress_archaeological_sites
+}
                             habitable_planet = yes
                             OR = {
                                 is_colony = no
@@ -405,8 +411,10 @@ country_event = {
                     random_system_planet = {
                         limit = {
                             has_anomaly = no 
-                            NOT = { exists = archaeological_site }
-                            NOT = { has_planet_flag = suppress_archaeological_sites }
+                            NOR = {
+	exists = archaeological_site
+	has_planet_flag = suppress_archaeological_sites
+}
                             habitable_planet = yes
                             OR = {
                                 is_colony = no
